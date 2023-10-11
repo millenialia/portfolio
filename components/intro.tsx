@@ -51,7 +51,7 @@ export default function Intro() {
             setTimeOfLastClick(Date.now())
             setActiveSection('Contact')}}>Contact me here<BsArrowRight className='opacity-70 group-hover:translate-x-1 transition' /></Link>
               
-              <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10' href='/CV.pdf' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
+              <a className='group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-100 transition cursor-pointer borderBlack dark:bg-white/10' href='/olena_kovalchuk_fullstack.pdf' download>Download CV <HiDownload className='opacity-60 group-hover:translate-y-1 transition'/></a>
 
         <div className='flex gap-2'>
           

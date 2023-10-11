@@ -3,8 +3,12 @@ import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import mimino from "@/public/mimino.jpeg"
+import phonebook from "@/public/phonebook.jpeg"
+import tictactoe from "@/public/tictactoe.jpeg"
+import moviesearch from "@/public/moviesearch.jpeg"
+import bookshelf from "@/public/bookshelf.jpeg"
+import restapi from "@/public/rest-api.jpeg"
 
 export const links = [
   {
@@ -35,28 +39,36 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Full-Stack Developer course",
+    location: "Remote",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "On course I covered topics like HTML, CSS, JS, React, Redux, Node.js and many more. Created several individual and group projects. On group projects I tried myself in Scrum Master role.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jan 23 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Operations manager",
+    location: "Cracow, Poland",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+    "I am working at Euroclear Bank. My day-to-day responsibilities include filling the database with analyzed data. Additionally, I participate in various business projects.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Apr 22 - Present",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Auditor",
+    location: "Kyiv, Ukraine",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+    "While working as an auditor, I was responsible for reviewing financial statements and preparing reports, as well as interacting with clients through communication and collaboration.",
+    icon: React.createElement(CgWorkAlt),
+    date: "Nov 19 - Feb 21",
+  },
+  {
+    title: "Corporate finance and Accounting",
+    location: "Cracow, Poland",
+    description:
+      "During the studies I gained a good theoretical base in financial fields. However university gave me not only knowledge, but it taught me to think logically and to debug communication with mentors for achieving the best result.",
+    icon: React.createElement(LuGraduationCap),
+    date: "Sep 16 - Sep 19",
   },
 ] as const;
 
@@ -67,7 +79,15 @@ export const projectsData = [
       "My first back-end project for contacts storage.",
     functional: "user sign up/sign in/logout, update users subscription plan and avatar, create/update/delete contacts, filtering and more.",
     tags: ["Node.js", "Express", "MongoDB", "Mongoose", "Joi", "Multer"],
-    imageUrl: corpcommentImg,
+    imageUrl: restapi,
+  },
+  {
+    title: "TicTacToe",
+    description:
+    "Wildly known game tic-tac-toe.",
+    functional: "first try in using Typescript and Next.js.",
+    tags: ["Next.js", "Typescript"],
+    imageUrl: tictactoe,
   },
   {
     title: "Movie-search",
@@ -75,15 +95,7 @@ export const projectsData = [
       "An online database of information related to movies.",
     functional: "popular movies, search by name/category, watch list, detailed overviews, pagination and recently viewed.",
     tags: ["React", "Styled Components", "Router DOM", "Redux Toolkit"],
-    imageUrl: rmtdevImg,
-  },
-  {
-    title: "TicTacToe",
-    description:
-      "Wildly known game tic-tac-toe.",
-    functional: "first try in using Typescript and Next.js.",
-    tags: ["Next.js", "Typescript"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: moviesearch,
   },
   {
     title: "Phonebook",
@@ -91,7 +103,7 @@ export const projectsData = [
       "Web application for creating and storing contacts",
     functional: "user sign up/sign in/logout, create/update/delete contacts available after login.",
     tags: ["React", "Module CSS", "Router DOM", "Redux Toolkit"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: phonebook,
   },
   {
     title: "Bookshelf",
@@ -99,15 +111,15 @@ export const projectsData = [
       "Web book-store.",
     functional: "popular books, filter by category, authorization, shopping list, modals, burger menu.",
     tags: ["HTML", "CSS", "Vanilla JS", "Firebase"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: bookshelf,
   },
   {
-    title: "MINIMO",
+    title: "MIMINO",
     description:
       "Hotel with restaurant website",
     functional: "informative website about the hotel, its rooms, prices, and the restaurant on the premises.",
     tags: ["HTML", "CSS", "Vanilla JS"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: mimino,
   },
 ] as const;
 

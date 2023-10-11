@@ -46,11 +46,12 @@ const toggleTheme = () => {
 
 }, [])
 
-  return (
+    return (
       <ThemeContext.Provider value={{
           theme,
           toggleTheme,
-      }}>
+        }}>
+            <button></button>
           {children}
     </ThemeContext.Provider>
   )
