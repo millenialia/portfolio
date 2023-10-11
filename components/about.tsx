@@ -12,37 +12,21 @@ export default function About() {
   return (
     <motion.section
       ref={ref}
-      className='mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28'
+      className='mb-28 max-w-[50rem] text-center leading-8 sm:mb-40 scroll-mt-28'
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 0.175 }}
     id='about'>
           <SectionHeading>About me</SectionHeading>
-          <p className='mb-3'>
-              After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
-          </p>
-          <p>
-              <span className="italic">When I`m not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I`m also
-        learning how to play the guitar.
-          </p>
+      <p className='mb-3'>
+        Working in finance, I always had a keen interest in technology. About a year ago, I took a chance and started learning programming. I took a course that taught me web development basics like <span className="font-medium">HTML, CSS, JavaScript, React and Node.js</span>. I also independently learned <span className="font-medium">TypeScript</span> and use it extensively in my projects, along with <span className="font-medium">Next.js</span>. I enjoy exploring various libraries to find the most suitable solutions. Knowing there are many more to discover, I`m excited about the opportunities ahead. What excites me most about programming is taking on tough challenges and eventually finding solutions.
+      </p>
+      <p className='mb-3'>
+        Outside of work, I love being outdoors. I enjoy activities like biking, yoga, and swimming. I`m a big fan of traveling, camping, and finding peaceful places in nature. One of my big dreams is to see the southern lights in Iceland, even if it`s a bit of a cliché!
+      </p>
+      <p>
+        Right now, I`m searching for a <span className="font-medium italic">full-time position of junior developer</span> where I can apply my skills to real projects and keep growing.
+      </p>
     </motion.section>
   )
 }

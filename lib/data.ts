@@ -62,24 +62,51 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "REST-API",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "My first back-end project for contacts storage.",
+    functional: "user sign up/sign in/logout, update users subscription plan and avatar, create/update/delete contacts, filtering and more.",
+    tags: ["Node.js", "Express", "MongoDB", "Mongoose", "Joi", "Multer"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Movie-search",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "An online database of information related to movies.",
+    functional: "popular movies, search by name/category, watch list, detailed overviews, pagination and recently viewed.",
+    tags: ["React", "Styled Components", "Router DOM", "Redux Toolkit"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "TicTacToe",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Wildly known game tic-tac-toe.",
+    functional: "first try in using Typescript and Next.js.",
+    tags: ["Next.js", "Typescript"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Phonebook",
+    description:
+      "Web application for creating and storing contacts",
+    functional: "user sign up/sign in/logout, create/update/delete contacts available after login.",
+    tags: ["React", "Module CSS", "Router DOM", "Redux Toolkit"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Bookshelf",
+    description:
+      "Web book-store.",
+    functional: "popular books, filter by category, authorization, shopping list, modals, burger menu.",
+    tags: ["HTML", "CSS", "Vanilla JS", "Firebase"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "MINIMO",
+    description:
+      "Hotel with restaurant website",
+    functional: "informative website about the hotel, its rooms, prices, and the restaurant on the premises.",
+    tags: ["HTML", "CSS", "Vanilla JS"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -88,20 +115,14 @@ export const skillsData = [
   "HTML",
   "CSS",
   "JavaScript",
-  "TypeScript",
   "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
   "Redux",
-  "GraphQL",
-  "Apollo",
+  "Git",
+  "Node.js",
   "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+  "MongoDB",
+  "Rest API",
+  "Figma",
+  "TypeScript",
+  "Next.js",
 ] as const;
