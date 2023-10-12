@@ -4,10 +4,11 @@ import { projectsData } from '@/lib/data'
 import Image from 'next/image'
 import React, { useRef } from 'react'
 import { motion, useScroll, useTransform } from 'framer-motion'
+import Link from 'next/link'
 
 type ProjectProps = typeof projectsData[number]
 
-export default function Project({ title, description, functional, tags, imageUrl }: ProjectProps) {
+export default function Project({ title, description, functional, tags, imageUrl, link }: ProjectProps) {
     const ref = useRef<HTMLDivElement>(null)
     const {scrollYProgress} = useScroll({
         target: ref,
@@ -17,12 +18,15 @@ export default function Project({ title, description, functional, tags, imageUrl
     const opacityProgress = useTransform(scrollYProgress, [0, 1], [0.6, 1])
     return (
         <motion.div
-            ref={ref}
-            style={{
-              scale: scaleProgress,
-              opacity: opacityProgress,
-            }}
+        ref={ref}
+        style={{
+          scale: scaleProgress,
+          opacity: opacityProgress,
+        }}
         className='group mb-3 sm:mb-8 last:mb-0'>
+        
+        <Link href={ link } target='_blank'>
+
       <section
           className='bg-gray-100 max-w-[42rem] border border-black/5 rounded-lg overflow-hidden sm:pr-8 relative sm:h-[20rem] sm:group-even:pl-8 hover:bg-gray-200 transition dark:bg-white/10 dark:hover:bg-white/20'>
           
@@ -38,7 +42,8 @@ export default function Project({ title, description, functional, tags, imageUrl
           </div>
           
         <Image src={imageUrl} alt={title} quality={95} className='absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl group-even:right-[initial] group-even:-left-40 transition group-hover:-translate-x-3 group-hover:translate-y-3 group-hover:-rotate-2 group-even:group-hover:translate-x-3 group-even:group-hover:translate-y-3 group-even:group-hover:rotate-2 group-hover:scale-105'/>
-            </section>
+          </section>
+          </Link>
         </motion.div>
   )
 }

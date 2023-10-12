@@ -78,6 +78,7 @@ export const projectsData = [
     functional: "user sign up/sign in/logout, update users subscription plan and avatar, create/update/delete contacts, filtering and more.",
     tags: ["Node.js", "Express", "MongoDB", "Mongoose", "Joi", "Multer"],
     imageUrl: restapi,
+    link: "https://github.com/millenialia/REST-API"
   },
   {
     title: "TicTacToe",
@@ -86,6 +87,7 @@ export const projectsData = [
     functional: "first try in using Typescript and Next.js.",
     tags: ["Next.js", "Typescript"],
     imageUrl: tictactoe,
+    link: "https://github.com/millenialia/TicTacToe"
   },
   {
     title: "Movie-search",
@@ -94,6 +96,7 @@ export const projectsData = [
     functional: "popular movies, search by name/category, watch list, detailed overviews, pagination and recently viewed.",
     tags: ["React", "Styled Components", "Router DOM", "Redux Toolkit"],
     imageUrl: moviesearch,
+    link: "https://github.com/millenialia/Movie-search"
   },
   {
     title: "Phonebook",
@@ -102,6 +105,7 @@ export const projectsData = [
     functional: "user sign up/sign in/logout, create/update/delete contacts available after login.",
     tags: ["React", "Module CSS", "Router DOM", "Redux Toolkit"],
     imageUrl: phonebook,
+    link: "https://github.com/millenialia/Phonebook"
   },
   {
     title: "Bookshelf",
@@ -110,6 +114,7 @@ export const projectsData = [
     functional: "popular books, filter by category, authorization, shopping list, modals, burger menu.",
     tags: ["HTML", "CSS", "Vanilla JS", "Firebase"],
     imageUrl: bookshelf,
+    link: "https://github.com/millenialia/project-team-10-added-features"
   },
   {
     title: "MIMINO",
@@ -118,6 +123,7 @@ export const projectsData = [
     functional: "informative website about the hotel, its rooms, prices, and the restaurant on the premises.",
     tags: ["HTML", "CSS", "Vanilla JS"],
     imageUrl: mimino,
+    link: "https://github.com/Mishanja123/project-1"
   },
 ] as const;
 
