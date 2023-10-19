@@ -7,6 +7,7 @@ import tictactoe from "@/public/tictactoe.jpeg"
 import moviesearch from "@/public/moviesearch.jpeg"
 import bookshelf from "@/public/bookshelf.jpeg"
 import restapi from "@/public/rest-api.jpeg"
+import websudio from "@/public/websudio.jpeg"
 
 export const links = [
   {
@@ -121,9 +122,18 @@ export const projectsData = [
     description:
       "Hotel with restaurant website",
     functional: "informative website about the hotel, its rooms, prices, and the restaurant on the premises.",
-    tags: ["HTML", "CSS", "Vanilla JS"],
+    tags: ["HTML", "CSS"],
     imageUrl: mimino,
     link: "https://github.com/Mishanja123/project-1"
+  },
+  {
+    title: "Web Studio",
+    description:
+      "My first HTML and CSS project.",
+    functional: "informative company website, its features, team, clients and portfolio.",
+    tags: ["HTML", "CSS"],
+    imageUrl: websudio,
+    link: "https://github.com/millenialia/Webstudio"
   },
 ] as const;
 
