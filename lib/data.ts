@@ -7,7 +7,7 @@ import tictactoe from "@/public/tictactoe.jpeg"
 import moviesearch from "@/public/moviesearch.jpeg"
 import bookshelf from "@/public/bookshelf.jpeg"
 import restapi from "@/public/rest-api.jpeg"
-import websudio from "@/public/websudio.jpeg"
+import webstudio from "@/public/webstudio.jpeg"
 
 export const links = [
   {
@@ -132,7 +132,7 @@ export const projectsData = [
       "My first HTML and CSS project.",
     functional: "informative company website, its features, team, clients and portfolio.",
     tags: ["HTML", "CSS"],
-    imageUrl: websudio,
+    imageUrl: webstudio,
     link: "https://github.com/millenialia/Webstudio"
   },
 ] as const;
